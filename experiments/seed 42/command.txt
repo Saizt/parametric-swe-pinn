@@ -1,0 +1,1 @@
+src/run_experiments.py --config configs/paper_training_args.json --eval_config_json configs/paper_evaluation.json --seed 42

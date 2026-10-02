@@ -1,0 +1,515 @@
+{
+  "Lx": 100,
+  "N_colloc_train": 80000,
+  "N_colloc_val": 20000,
+  "Nx": 402,
+  "activation": "SiLU",
+  "balance_dry_loss": false,
+  "bc_weight": 0.6,
+  "config": "configs/paper_training_args.json",
+  "data_weight": 1.0,
+  "device": "legacy_auto",
+  "disable_scheduler": false,
+  "display": false,
+  "dry_hR_eps": 0.5,
+  "dry_loss_weight": 1.0,
+  "dt": 0.0001,
+  "enforce_pos_h": "none",
+  "eval_config_json": "configs/paper_evaluation.json",
+  "eval_paper_figures": false,
+  "gate_alpha_grad": 8.0,
+  "gate_floor": 0.05,
+  "gate_h_min": 0.05,
+  "grad_clip": 1.0,
+  "greedy_json": null,
+  "greedy_max_runs": null,
+  "greedy_name": null,
+  "greedy_run_baseline": true,
+  "greedy_search": false,
+  "ic_weight": 1.0,
+  "l2_data": false,
+  "l2_pde": true,
+  "lambda_q": 5.0,
+  "layers": [
+    4,
+    120,
+    120,
+    120,
+    120,
+    120,
+    2
+  ],
+  "load_checkpoint": null,
+  "model": "lin",
+  "nonneg_h_weight": 0.01,
+  "num_epochs": 20000,
+  "optimizer_lr": 0.001,
+  "output_dir": "./",
+  "paper_eval": false,
+  "paper_eval_Nx": 402,
+  "paper_eval_aggregate": "mean",
+  "paper_eval_dam_shape": "perpendicular",
+  "paper_eval_dt": 0.0001,
+  "paper_eval_exclude_H1": false,
+  "paper_eval_fields": "h,q,state",
+  "paper_eval_grid_hL": null,
+  "paper_eval_grid_hR": null,
+  "paper_eval_grid_json": null,
+  "paper_eval_n_sample": 99,
+  "paper_eval_sample_interval": 0.01,
+  "paper_eval_sampling": "mc",
+  "paper_eval_save_name": null,
+  "paper_eval_seed": 123,
+  "paper_eval_t_final": 2.5,
+  "pde_gate": true,
+  "pde_weight": 0.3,
+  "plot_special_t2p5": false,
+  "rampup_epochs_share": 0.25,
+  "residual_ema_beta": 0.99,
+  "residual_scale_eps": 1e-08,
+  "residual_scaling": "ema_rms",
+  "sanity": false,
+  "sanity_epochs": 1,
+  "scheduler_T_max": 20000,
+  "scheduler_eta_min": 1e-05,
+  "seed": 42,
+  "shock_aware_colloc": true,
+  "shock_boundary_buf_frac": 0.02,
+  "shock_focus_share": 0.0,
+  "shock_indicator": "h",
+  "shock_sanity_overlay": false,
+  "shock_sanity_overlay_dt": 0.0005,
+  "shock_sanity_overlay_nx": 201,
+  "shock_sanity_overlay_regimes": null,
+  "shock_sanity_overlay_times": null,
+  "shock_smooth_window": 7,
+  "shock_w_excl": 2.5,
+  "shock_w_focus": 0.0,
+  "slice_eval": false,
+  "slice_eval_fields": "h,q,state",
+  "slice_eval_hL": 25.0,
+  "slice_eval_hR_max": 8.0,
+  "slice_eval_hR_min": 0.0,
+  "slice_eval_nhR": 80,
+  "t_final": 2.5,
+  "test_h": [
+    [
+      8.0,
+      0.0,
+      "perpendicular"
+    ],
+    [
+      14.0,
+      0.0,
+      "perpendicular"
+    ],
+    [
+      20.5,
+      0.0,
+      "perpendicular"
+    ],
+    [
+      30.0,
+      0.0,
+      "perpendicular"
+    ],
+    [
+      8.0,
+      2.0,
+      "perpendicular"
+    ],
+    [
+      14.0,
+      2.0,
+      "perpendicular"
+    ],
+    [
+      20.5,
+      2.0,
+      "perpendicular"
+    ],
+    [
+      30.0,
+      2.0,
+      "perpendicular"
+    ],
+    [
+      9.5,
+      8.5,
+      "perpendicular"
+    ],
+    [
+      14.0,
+      8.5,
+      "perpendicular"
+    ],
+    [
+      20.5,
+      8.5,
+      "perpendicular"
+    ],
+    [
+      30,
+      8.5,
+      "perpendicular"
+    ],
+    [
+      25.0,
+      0.05,
+      "perpendicular"
+    ],
+    [
+      25.0,
+      0.3,
+      "perpendicular"
+    ],
+    [
+      25.0,
+      2.0,
+      "perpendicular"
+    ]
+  ],
+  "test_t": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5
+  ],
+  "tol": null,
+  "train_grid_json": "configs/paper_training_grid.json",
+  "train_regime": [
+    [
+      10.0,
+      0.0,
+      "perpendicular"
+    ],
+    [
+      10.0,
+      0.1363,
+      "perpendicular"
+    ],
+    [
+      10.0,
+      0.5359,
+      "perpendicular"
+    ],
+    [
+      10.0,
+      1.1716,
+      "perpendicular"
+    ],
+    [
+      10.0,
+      2.0,
+      "perpendicular"
+    ],
+    [
+      10.0,
+      2.9647,
+      "perpendicular"
+    ],
+    [
+      10.0,
+      4.0,
+      "perpendicular"
+    ],
+    [
+      10.0,
+      5.0353,
+      "perpendicular"
+    ],
+    [
+      10.0,
+      6.0,
+      "perpendicular"
+    ],
+    [
+      10.0,
+      6.8284,
+      "perpendicular"
+    ],
+    [
+      10.0,
+      7.4641,
+      "perpendicular"
+    ],
+    [
+      10.0,
+      7.8637,
+      "perpendicular"
+    ],
+    [
+      10.0,
+      8.0,
+      "perpendicular"
+    ],
+    [
+      14.5,
+      0.0,
+      "perpendicular"
+    ],
+    [
+      14.5,
+      0.1363,
+      "perpendicular"
+    ],
+    [
+      14.5,
+      0.5359,
+      "perpendicular"
+    ],
+    [
+      14.5,
+      1.1716,
+      "perpendicular"
+    ],
+    [
+      14.5,
+      2.0,
+      "perpendicular"
+    ],
+    [
+      14.5,
+      2.9647,
+      "perpendicular"
+    ],
+    [
+      14.5,
+      4.0,
+      "perpendicular"
+    ],
+    [
+      14.5,
+      5.0353,
+      "perpendicular"
+    ],
+    [
+      14.5,
+      6.0,
+      "perpendicular"
+    ],
+    [
+      14.5,
+      6.8284,
+      "perpendicular"
+    ],
+    [
+      14.5,
+      7.4641,
+      "perpendicular"
+    ],
+    [
+      14.5,
+      7.8637,
+      "perpendicular"
+    ],
+    [
+      14.5,
+      8.0,
+      "perpendicular"
+    ],
+    [
+      19.0,
+      0.0,
+      "perpendicular"
+    ],
+    [
+      19.0,
+      0.1363,
+      "perpendicular"
+    ],
+    [
+      19.0,
+      0.5359,
+      "perpendicular"
+    ],
+    [
+      19.0,
+      1.1716,
+      "perpendicular"
+    ],
+    [
+      19.0,
+      2.0,
+      "perpendicular"
+    ],
+    [
+      19.0,
+      2.9647,
+      "perpendicular"
+    ],
+    [
+      19.0,
+      4.0,
+      "perpendicular"
+    ],
+    [
+      19.0,
+      5.0353,
+      "perpendicular"
+    ],
+    [
+      19.0,
+      6.0,
+      "perpendicular"
+    ],
+    [
+      19.0,
+      6.8284,
+      "perpendicular"
+    ],
+    [
+      19.0,
+      7.4641,
+      "perpendicular"
+    ],
+    [
+      19.0,
+      7.8637,
+      "perpendicular"
+    ],
+    [
+      19.0,
+      8.0,
+      "perpendicular"
+    ],
+    [
+      23.5,
+      0.0,
+      "perpendicular"
+    ],
+    [
+      23.5,
+      0.1363,
+      "perpendicular"
+    ],
+    [
+      23.5,
+      0.5359,
+      "perpendicular"
+    ],
+    [
+      23.5,
+      1.1716,
+      "perpendicular"
+    ],
+    [
+      23.5,
+      2.0,
+      "perpendicular"
+    ],
+    [
+      23.5,
+      2.9647,
+      "perpendicular"
+    ],
+    [
+      23.5,
+      4.0,
+      "perpendicular"
+    ],
+    [
+      23.5,
+      5.0353,
+      "perpendicular"
+    ],
+    [
+      23.5,
+      6.0,
+      "perpendicular"
+    ],
+    [
+      23.5,
+      6.8284,
+      "perpendicular"
+    ],
+    [
+      23.5,
+      7.4641,
+      "perpendicular"
+    ],
+    [
+      23.5,
+      7.8637,
+      "perpendicular"
+    ],
+    [
+      23.5,
+      8.0,
+      "perpendicular"
+    ],
+    [
+      28.0,
+      0.0,
+      "perpendicular"
+    ],
+    [
+      28.0,
+      0.1363,
+      "perpendicular"
+    ],
+    [
+      28.0,
+      0.5359,
+      "perpendicular"
+    ],
+    [
+      28.0,
+      1.1716,
+      "perpendicular"
+    ],
+    [
+      28.0,
+      2.0,
+      "perpendicular"
+    ],
+    [
+      28.0,
+      2.9647,
+      "perpendicular"
+    ],
+    [
+      28.0,
+      4.0,
+      "perpendicular"
+    ],
+    [
+      28.0,
+      5.0353,
+      "perpendicular"
+    ],
+    [
+      28.0,
+      6.0,
+      "perpendicular"
+    ],
+    [
+      28.0,
+      6.8284,
+      "perpendicular"
+    ],
+    [
+      28.0,
+      7.4641,
+      "perpendicular"
+    ],
+    [
+      28.0,
+      7.8637,
+      "perpendicular"
+    ],
+    [
+      28.0,
+      8.0,
+      "perpendicular"
+    ]
+  ],
+  "train_sample_interval": 0.1,
+  "val_regime": [
+    17.0,
+    4.0,
+    "perpendicular"
+  ],
+  "val_sample_interval": 0.25
+}

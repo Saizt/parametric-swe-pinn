@@ -1,0 +1,19 @@
+{
+  "timings": {
+    "data_generation_and_preparation": {
+      "count": 1,
+      "mean_seconds": 51.32522789761424,
+      "seconds": 51.32522789761424
+    },
+    "evaluation_total": {
+      "count": 1,
+      "mean_seconds": 633.5428976835683,
+      "seconds": 633.5428976835683
+    },
+    "pipeline_total": {
+      "count": 1,
+      "mean_seconds": 58427.68520649709,
+      "seconds": 58427.68520649709
+    }
+  }
+}

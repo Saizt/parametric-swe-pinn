@@ -1,0 +1,46 @@
+{
+  "cases": [
+    [12.0, 0.0, "perpendicular"],
+    [12.0, 7.0, "perpendicular"],
+    [15.0, 4.0, "perpendicular"],
+    [18.0, 0.0, "perpendicular"],
+    [26.0, 0.14, "perpendicular"],
+    [26.0, 7.0, "perpendicular"]
+  ],
+  "times": [0.5, 1.0, 1.5, 2.0],
+  "individual_plots": false,
+  "results_file": "paper_test_results.json",
+  "paper_metrics": {
+    "enabled": true,
+    "sampling": "mc",
+    "n_samples": 99,
+    "seed": 123,
+    "include_H1": false,
+    "Nx": 402,
+    "t_final": 2.5,
+    "dt": 0.0001,
+    "sample_interval": 0.01,
+    "fields": ["h", "q", "state"],
+    "aggregate": "mean",
+    "save_name": "eval_mc_paper"
+  },
+  "slice_evaluation": {
+    "enabled": true,
+    "hL": 25.0,
+    "hR_min": 0.13,
+    "hR_max": 8.0,
+    "n_hR": 80,
+    "fields": ["h", "q", "state"],
+    "save_name": "slice_25"
+  },
+  "error_evolution_plots": [
+    {"test_h": [[12,0,"perpendicular"],[12,7,"perpendicular"],[15,4,"perpendicular"],[18,0,"perpendicular"],[26,0.14,"perpendicular"],[26,7,"perpendicular"]], "field": "h", "sample_interval": 0.01},
+    {"test_h": [[12,0,"perpendicular"],[12,7,"perpendicular"],[15,4,"perpendicular"],[18,0,"perpendicular"],[26,0.14,"perpendicular"],[26,7,"perpendicular"]], "field": "q", "sample_interval": 0.01}
+  ],
+  "profile_plots": [
+    {"test_h": [[12,0,"perpendicular"],[12,7,"perpendicular"],[15,4,"perpendicular"],[18,0,"perpendicular"],[26,0.14,"perpendicular"],[26,7,"perpendicular"]], "test_t": 2.0, "field": "h", "plot_kind": "profile"},
+    {"test_h": [[12,0,"perpendicular"],[12,7,"perpendicular"],[15,4,"perpendicular"],[18,0,"perpendicular"],[26,0.14,"perpendicular"],[26,7,"perpendicular"]], "test_t": 2.0, "field": "h", "plot_kind": "spectrum"},
+    {"test_h": [[12,0,"perpendicular"],[12,7,"perpendicular"],[15,4,"perpendicular"],[18,0,"perpendicular"],[26,0.14,"perpendicular"],[26,7,"perpendicular"]], "test_t": 2.0, "field": "q", "plot_kind": "profile"},
+    {"test_h": [[12,0,"perpendicular"],[12,7,"perpendicular"],[15,4,"perpendicular"],[18,0,"perpendicular"],[26,0.14,"perpendicular"],[26,7,"perpendicular"]], "test_t": 2.0, "field": "q", "plot_kind": "spectrum"}
+  ]
+}

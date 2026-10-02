@@ -1,0 +1,22 @@
+{
+  "sampling": "mc",
+  "num_params": 99,
+  "aggregate": "mean",
+  "fields": [
+    "h",
+    "q",
+    "state"
+  ],
+  "h_E_L2(L2)_avg_mean": 0.005401246834308203,
+  "h_E_L2(L2)_avg_integral": 0.7777795441403813,
+  "h_E_L2(L2)_sup": 0.012582509479461186,
+  "h_E_L2(L2)_mean_unscaled": 0.005401246834308203,
+  "q_E_L2(L2)_avg_mean": 0.022725019302460642,
+  "q_E_L2(L2)_avg_integral": 3.2724027795543327,
+  "q_E_L2(L2)_sup": 0.060014048583314474,
+  "q_E_L2(L2)_mean_unscaled": 0.022725019302460642,
+  "state_E_L2(L2)_avg_mean": 0.020904474234655065,
+  "state_E_L2(L2)_avg_integral": 3.0102442897903297,
+  "state_E_L2(L2)_sup": 0.0578287218291616,
+  "state_E_L2(L2)_mean_unscaled": 0.020904474234655065
+}

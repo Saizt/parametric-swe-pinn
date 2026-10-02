@@ -1,0 +1,12 @@
+{
+  "cuda_available": false,
+  "git_commit": null,
+  "machine": "x86_64",
+  "mps_available": false,
+  "numpy": "2.3.1",
+  "platform": "Linux-7.0.12-201.fc44.x86_64-x86_64-with-glibc2.43",
+  "processor": "",
+  "python": "3.11.13 (main, Jun  5 2025, 13:12:00) [GCC 11.2.0]",
+  "torch": "2.5.1",
+  "torch_default_dtype": "torch.float32"
+}

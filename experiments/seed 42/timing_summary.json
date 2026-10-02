@@ -1,0 +1,46 @@
+{
+  "num_epochs": 20000,
+  "seconds_per_epoch": 2.886606409328338,
+  "timings": {
+    "collocation_sampling": {
+      "count": 1,
+      "mean_seconds": 0.5182243017479777,
+      "seconds": 0.5182243017479777
+    },
+    "data_preparation_total": {
+      "count": 1,
+      "mean_seconds": 51.32248109858483,
+      "seconds": 51.32248109858483
+    },
+    "fom_training_dataset_generation": {
+      "count": 1,
+      "mean_seconds": 49.66739835962653,
+      "seconds": 49.66739835962653
+    },
+    "fom_validation_generation": {
+      "count": 1,
+      "mean_seconds": 0.7948695002123713,
+      "seconds": 0.7948695002123713
+    },
+    "shock_detection_preprocessing": {
+      "count": 1,
+      "mean_seconds": 0.07961332146078348,
+      "seconds": 0.07961332146078348
+    },
+    "training_gradient_steps": {
+      "count": 1,
+      "mean_seconds": 54926.61299304571,
+      "seconds": 54926.61299304571
+    },
+    "training_total": {
+      "count": 1,
+      "mean_seconds": 57732.128186566755,
+      "seconds": 57732.128186566755
+    },
+    "validation_total": {
+      "count": 1,
+      "mean_seconds": 2777.465405896306,
+      "seconds": 2777.465405896306
+    }
+  }
+}

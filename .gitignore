@@ -1,0 +1,5 @@
+experiments/*
+!experiments/seed 42/
+docs/
+*.zip
+.DS_store

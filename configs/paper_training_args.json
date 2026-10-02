@@ -1,0 +1,53 @@
+{
+  "seed": 42,
+  "output_dir": "./",
+
+  "model": "lin",
+  "layers": [4, 120, 120, 120, 120, 120, 2],
+  "activation": "SiLU",
+
+  "num_epochs": 20000,
+  "optimizer_lr": 0.001,
+  "data_weight": 1.0,
+  "pde_weight": 0.3,
+  "l2_pde": true,
+  "bc_weight": 0.6,
+  "ic_weight": 1.0,
+  "nonneg_h_weight": 0.01,
+  "lambda_q": 5.0,
+  "enforce_pos_h": "none",
+  "rampup_epochs_share": 0.25,
+
+  "scheduler_T_max": 20000,
+  "scheduler_eta_min": 0.00001,
+  "grad_clip": 1.0,
+
+  "val_regime": [17.0, 4.0, "perpendicular"],
+  "val_sample_interval": 0.25,
+
+  "N_colloc_train": 80000,
+  "N_colloc_val": 20000,
+
+  "shock_aware_colloc": true,
+  "shock_indicator": "h",
+  "shock_w_excl": 2.5,
+  "shock_w_focus": 0.0,
+  "shock_focus_share": 0.0,
+  "dry_hR_eps": 0.5,
+  "shock_smooth_window": 7,
+  "shock_boundary_buf_frac": 0.02,
+
+  "pde_gate": true,
+  "gate_alpha_grad": 8.0,
+  "gate_h_min": 0.05,
+  "gate_floor": 0.05,
+
+  "residual_scaling": "ema_rms",
+  "residual_ema_beta": 0.99,
+  "residual_scale_eps": 1e-8,
+
+  "balance_dry_loss": false,
+  "dry_loss_weight": 1.0,
+
+  "train_grid_json": "configs/paper_training_grid.json"
+}
